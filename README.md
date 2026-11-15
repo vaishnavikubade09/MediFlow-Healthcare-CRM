@@ -414,4 +414,4 @@ sf apex run --file scripts/apex/cleanup-showcase-data.apex --target-org healthca
 ## 👤 Author
 
 **Vaishnavi Kubade** – Salesforce Developer / Admin
-[LinkedIn]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/vaishnavi-kubade-9b7aa11bb/)) • [GitHub]([https://github.com/your-username](https://github.com/vaishnavikubade09))
+[LinkedIn](https://www.linkedin.com/in/vaishnavi-kubade-9b7aa11bb/) • [GitHub](https://github.com/vaishnavikubade09)

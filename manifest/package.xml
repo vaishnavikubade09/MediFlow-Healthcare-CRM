@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <!-- Objects: custom objects + standard objects that hold your custom fields / record types -->
+    <types>
+        <members>Patient__c</members>
+        <members>Appointment__c</members>
+        <members>Billing__c</members>
+        <members>Case</members>
+        <members>Account</members>
+        <members>Contact</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Patient__c</members>
+        <members>Appointment__c</members>
+        <members>Billing__c</members>
+        <name>CustomTab</name>
+    </types>
+
+    <!-- Page layouts (CHECK names: Object-Layout Name) -->
+    <types>
+        <members>Patient__c-Patient Layout</members>
+        <members>Appointment__c-Appointment Layout</members>
+        <members>Billing__c-Billing Layout</members>
+        <members>Case-Case Layout</members>
+        <name>Layout</name>
+    </types>
+
+    <!-- Apex: only your classes -->
+    <types>
+        <members>caseTriggerHandler</members>
+        <members>CaseTriggerHandlerTest</members>
+        <members>WeeklyCaseSummary</members>
+        <members>WeeklyCaseSummaryTest</members>
+        <members>MonthlyslaComplianceBatch</members>
+        <members>MonthlySlaComplianceBatchTest</members>
+        <members>MonthlyslaComplianceScheduler</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>caseTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+
+    <!-- Flows (CHECK API names) -->
+    <types>
+        <members>Case_Assign_Entitlement</members>
+        <members>Case_Auto_closed_resolved</members>
+        <members>Case_Complete_milestones</members>
+        <members>Case_Patient_Flow</members>
+		<members>Chat_entry_to_bot</members>
+		<members>Chat_transfer_to_queue</members>
+        <members>Notify_patient_on_status_change</members>
+        <members>Patient_Chat_Routing</members>
+		<members>Route_to_Elbert</members>
+		<members>Weekly_insurance_reminder</members>
+        <name>Flow</name>
+    </types>
+
+    <!-- Rules on Case (these are always named after the object) -->
+    <types><members>Case</members><name>AssignmentRules</name></types>
+    <types><members>Case</members><name>AutoResponseRules</name></types>
+    <types><members>Case</members><name>EscalationRules</name></types>
+    <types><members>Case</members><name>SharingRules</name></types>
+    <types><members>Patient__c</members><name>SharingRules</name></types>
+
+    <!-- Duplicate management (CHECK names) -->
+    <types><members>Patient__c</members><name>MatchingRules</name></types>
+   
+    <!-- Security -->
+    <types>
+        <members>CEO</members>
+        <members>Supervisor</members>
+        <members>Support_Agent</members>
+        <members>Doctor</members>
+        <name>Role</name>
+    </types>
+    <types>
+        <members>Doctor</members>
+        <members>Insurance</members>
+        <name>Group</name>
+    </types>
+
+    <!-- Queues (CHECK names) -->
+    <types>
+        <members>Scheduling_Queue</members>
+        <members>Finance_Queue</members>
+        <members>Medical_Review_Queue</members>
+        <members>Chat_queue</members>
+        <name>Queue</name>
+    </types>
+
+    <!-- SLA -->
+    <types><members>patient support SLA</members><name>EntitlementProcess</name></types>
+    <types><members>Resolution time</members><name>MilestoneType</name></types>
+
+    <!-- Omni-Channel: small and all yours, wildcard is fine -->
+    <types><members>*</members><name>ServiceChannel</name></types>
+    <types><members>*</members><name>ServicePresenceStatus</name></types>
+    <types><members>*</members><name>QueueRoutingConfig</name></types>
+
+    <!-- App, knowledge, portal, bot (CHECK names) -->
+    <types><members>Patient_Service_Console</members><name>CustomApplication</name></types>
+    <types><members>Patient_Topics</members><name>DataCategoryGroup</name></types>
+    <types><members>medi_Flow</members><name>Network</name></types>
+    <types><members>Elbert</members><name>Bot</name></types>
+
+    <!-- ===== ADDED: things that were missing ===== -->
+
+    <!-- Knowledge article object -->
+    <types><members>Knowledge__kav</members><name>CustomObject</name></types>
+
+    <!-- Profiles (CHECK names: Setup → Profiles) -->
+    <types>
+        <members>Support Supervisor Profile</members>
+        <members>Finance Profile</members>
+        <members>Insurance Profile</members>
+        <members>Medical Profile</members>
+        <members>Patient Portal</members>
+        <name>Profile</name>
+    </types>
+
+    <!-- Permission sets you created (CHECK: Setup → Permission Sets → API Name) -->
+    <types>
+        <members>Knowledge_Author</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <!-- Lightning record pages (CHECK: Setup → Lightning App Builder → API name) -->
+    <types>
+        <members>Patient_Record_Page</members>
+        <members>Case_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+
+    <!-- Email templates (format: FolderName/TemplateName; CHECK in Org Browser) -->
+    <types>
+        <members>unfiled$public/Case_received_Billing</members>
+        <members>unfiled$public/Case_received_Appointment</members>
+		<members>unfiled$public/Case_Received_General</members>
+		<members>unfiled$public/SLA_Violation</members>
+		<members>unfiled$public/SLA_warning</members>
+		<members>unfiled$public/Case_Closing_reminder</members>
+		<members>unfiled$public/Case_status_update</members>
+		<members>unfiled$public/Case_escalated</members>
+		<members>unfiled$public/Insurance_docs_reminder</members>
+		<members>unfiled$public/Insurance_follow_up</members>
+        <name>EmailTemplate</name>
+    </types>
+
+    <!-- Omni presence configuration -->
+    <types><members>*</members><name>PresenceUserConfig</name></types>
+
+    <!-- Portal: site files + sharing set (CHECK names in Org Browser) -->
+  
+    <types><members>Patient_Own_Records</members><name>SharingSet</name></types>
+
+    <!-- Web chat deployment -->
+    <types><members>Patient_web_chat</members><name>EmbeddedServiceConfig</name></types>
+	<types><members>Portal_chat</members><name>EmbeddedServiceConfig</name></types>
+
+    <!-- Reports & dashboards (format: FolderName/DeveloperName; CHECK in Org Browser) -->
+    
+    <types>
+        <members>SupportReports</members>
+        <members>SupportReports/SLA_Breaches_By_Type_and_Agent_Zrb</members>
+        <members>SupportReports/Practice_Cases_Report_9ls</members>
+		<members>SupportReports/SLA_Compliance_By_Type_4UM</members>
+		<members>SupportReports/Agent_Productivity_Cases_Closed_Per_Day_8HD</members>
+		<members>SupportReports/Open_vs_Closed_Cases_XG2</members>
+		<members>SupportReports/Open_Cases_5Rd</members>
+		<members>SupportReports/Monthly_Case_Trend_kBd</members>
+		<members>SupportReports/Patient_Satisfaction_Xlw</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>SupportDashboards</members>
+        <members>SupportDashboards/IejkKKTJiIfspSOSATojukfZDkEqPE</members>
+        <name>Dashboard</name>
+    </types>
+
+    <!-- Org feature settings (Email-to-Case, Entitlements, Knowledge) -->
+    <types>
+        <members>Case</members>
+        <members>Entitlement</members>
+        <members>Knowledge</members>
+        <name>Settings</name>
+    </types>
+    <version>67.0</version>
+</Package>

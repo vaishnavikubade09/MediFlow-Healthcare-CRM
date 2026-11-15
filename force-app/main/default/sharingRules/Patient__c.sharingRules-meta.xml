@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Patients_to_Clinical</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Patients to Clinical</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Doctor</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>CEO</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Patients_to_Support</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Patients to Support</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Supervisor</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>CEO</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

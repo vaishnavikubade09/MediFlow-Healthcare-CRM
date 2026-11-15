@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Patient acknowledgement</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email-Billings</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>vaishnavik.salesforce24@gmail.com</replyToEmail>
+            <senderEmail>vaishnavik.salesforce24@gmail.com</senderEmail>
+            <senderName>Patient Support</senderName>
+            <template>unfiled$public/Case_received_Billing</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email-Appointments</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>vaishnavik.salesforce24@gmail.com</replyToEmail>
+            <senderEmail>vaishnavik.salesforce24@gmail.com</senderEmail>
+            <senderName>Patient Support</senderName>
+            <template>unfiled$public/Case_received_Appointment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email,Web,Email-Feedback,Chat</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>vaishnavik.salesforce24@gmail.com</replyToEmail>
+            <senderEmail>vaishnavik.salesforce24@gmail.com</senderEmail>
+            <senderName>Patient Support</senderName>
+            <template>unfiled$public/Case_Received_General</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

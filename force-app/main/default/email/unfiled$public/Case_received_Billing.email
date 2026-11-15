@@ -1,0 +1,8 @@
+Dear {!Case.Patient},
+
+    We have received your billing query.
+    Your case reference number is {!Case.CaseNumber}.
+    Our Finance team will respond within 12 hours.
+
+    Thank you,
+    Patient Support Team

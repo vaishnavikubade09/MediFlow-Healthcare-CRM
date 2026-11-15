@@ -1,0 +1,1 @@
+SLA BREACHED: Case {!Case.CaseNumber}, type {!Case.RecordType}, opened {!Case.CreatedDate}. Please act now.

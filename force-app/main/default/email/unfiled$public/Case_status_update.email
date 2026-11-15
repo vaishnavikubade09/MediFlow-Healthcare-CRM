@@ -1,0 +1,1 @@
+Dear patient, your case {!Case.CaseNumber} is now: {!Case.Status}.

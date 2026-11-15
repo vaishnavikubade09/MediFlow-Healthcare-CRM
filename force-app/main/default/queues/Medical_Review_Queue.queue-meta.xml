@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>false</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Medical Review Queue</name>
+    <queueMembers>
+        <users>
+            <user>epic.th.6ef5204c396c@orgfarm.salesforce.com</user>
+            <user>vaishuuuk0909@gmail.com</user>
+            <user>vaishnavik.salesforce24770@agentforce.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Medical_Review_Routing</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

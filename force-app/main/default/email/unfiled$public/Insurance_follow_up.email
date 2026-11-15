@@ -1,0 +1,2 @@
+Insurance case {!Case.CaseNumber} ({!Case.Subject}) is still open.
+Current status: {!Case.Status}. Please follow up.

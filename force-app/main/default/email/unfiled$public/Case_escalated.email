@@ -1,0 +1,3 @@
+Case {!Case.CaseNumber} ({!Case.Subject}) with urgency {!Case.Urgency__c}
+    has been open for more than 12 hours and was escalated to you.
+    Previous owner: {!Case.OwnerFullName}

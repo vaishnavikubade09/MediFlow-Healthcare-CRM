@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Urgency_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+  OR (
+    RecordType.Name = &quot;Billing&quot;,
+    RecordType.Name = &quot;Appointment&quot;
+  ),
+  ISBLANK(TEXT(	Urgency__c))
+)</errorConditionFormula>
+    <errorMessage>Urgency is required for Billing and Appointment cases.</errorMessage>
+</ValidationRule>

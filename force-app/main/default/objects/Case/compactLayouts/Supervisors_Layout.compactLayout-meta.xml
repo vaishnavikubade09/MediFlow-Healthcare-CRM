@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supervisors_Layout</fullName>
+    <fields>AccountId</fields>
+    <fields>Appointment_ID__c</fields>
+    <fields>ContactEmail</fields>
+    <fields>ContactPhone</fields>
+    <fields>CreatedDate</fields>
+    <fields>ClosedDate</fields>
+    <fields>Priority</fields>
+    <fields>Payment_Ref__c</fields>
+    <fields>Urgency__c</fields>
+    <fields>Department__c</fields>
+    <label>Supervisors Layout</label>
+</CompactLayout>

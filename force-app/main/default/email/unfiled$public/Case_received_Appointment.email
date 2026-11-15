@@ -1,0 +1,8 @@
+Dear patient,
+
+    We have received your appointment query.
+    Your case reference number is {!Case.CaseNumber}.
+    Our Finance team will respond within 36 hours.
+
+    Thank you,
+    Patient Support Team

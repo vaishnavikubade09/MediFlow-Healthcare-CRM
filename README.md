@@ -98,11 +98,11 @@ The hospital chain handled patient requests through scattered inboxes and phone 
 - Separate author access via permission set; publishing controlled by the admin.
 
 ### 6. Self-Service Portal and Chatbot
-- **Experience Cloud** customer portal (**Medi_Flow**) where patients log in to:
+- **Experience Cloud** customer portal ([**Medi_Flow**]( https://orgfarm-e0175d9e82-dev-ed.develop.my.site.com/s/) where patients log in to:
   - view and create their own cases (**Sharing Sets** limit them to their own records),
-  - search knowledge articles.
-- **Einstein Bot** answers common questions and offers **"Talk to an agent"**, which transfers the
-  conversation to a live agent queue through Omni-Channel.
+  - search knowledge articles. 
+- **Einstein Bot** answers common questions and offers **"Talk to [Elbert](http://vaishnavikubade09.github.io/Patientform/)"**, which transfers the
+  conversation to a live agent queue through Omni-Channel. 
 
 ### 7. SLA Management
 - **Entitlement Management** with a *Standard Patient Support* entitlement.
